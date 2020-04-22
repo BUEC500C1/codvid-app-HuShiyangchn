@@ -54,6 +54,15 @@ export default class App extends React.Component {
                         onDragEnd={(e) => alert(JSON.stringify(e.nativeEvent.coordinate))}
                         title={'Test Marker'}
                         description={'This is a description of the marker'}
+                    <MapView.Marker
+                        coordinate={{latitude: 38.4555, longitude: 27.1199}}
+                        title={'Deneme'}
+                    />
+                    <MapView.Marker
+                        onPress={() => this.setState({visible: true}) + setTimeout(() => alert(this.state.visible), 200)}
+                        description={'marker'}
+                        coordinate={{latitude: 38.4555, longitude: 27.1129}}
+                        title={'Deneme'}/>
                     />
                 </MapView>
             </View>
