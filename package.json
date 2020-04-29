@@ -18,6 +18,7 @@
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-elements": "^1.2.7",
+    "react-native-gesture-handler": "^1.6.1",
     "react-native-maps": "0.27.1"
   },
   "devDependencies": {
@@ -36,6 +37,8 @@
     "metro-react-native-babel-preset": "^0.59.0",
     "react-native-fetch": "^2.0.0",
     "react-native-vector-icons": "^6.6.0",
+    "react-navigation": "^4.3.8",
+    "react-navigation-stack": "^2.3.13",
     "react-test-renderer": "16.11.0"
   },
   "jest": {

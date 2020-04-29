@@ -79,6 +79,8 @@ target 'MapExample' do
 
   pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
 
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   target 'MapExampleTests' do
     inherit! :complete
     # Pods for testing
