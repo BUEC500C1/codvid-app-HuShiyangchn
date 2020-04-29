@@ -10,7 +10,7 @@ export default class App extends Component {
             "CountryList": []
         }
     }
-    fetch_country_list(){
+    rendermarker(){
         this.showmarker();
     }
 
@@ -46,14 +46,14 @@ export default class App extends Component {
                                     }}
                                 >
                                     <Callout>
-                                        <Text style={styles.textBold}>{json[last]["Country"]} Live
-                                            Data</Text>
+                                        <Text style={styles.textBold}>{json[last]["Country"]} Current
+                                            Data</Text>Live
                                         <Text style={styles.text}>Confirmed:<Text
                                             style={styles.number}> {json[last]["Confirmed"]}</Text></Text>
-                                        <Text style={styles.text}>Recovered:<Text
-                                            style={styles.number}> {json[last]["Recovered"]}</Text></Text>
                                         <Text style={styles.text}>Deaths:<Text
                                             style={styles.number}> {json[last]["Deaths"]}</Text></Text>
+                                        <Text style={styles.text}>Recovered:<Text
+                                            style={styles.number}> {json[last]["Recovered"]}</Text></Text>
                                         <Text style={styles.text}>Active:<Text
                                             style={styles.number}> {json[last]["Active"]}</Text></Text>
                                     </Callout>
@@ -72,17 +72,18 @@ export default class App extends Component {
     }
     componentDidMount()
     {
-        this.fetch_country_list();
+        this.rendermarker();
     }
 
     render() {
         const marker = this.state.MarkerList;
         console.log(marker);
         return (
-            <View>
+        <View>
                 <MapView
                     style={styles.map}
                     region={{
+                        zoom: 15,
                         latitude: 33.86,
                         longitude: -80.95,
                         latitudeDelta: 0.0922,
@@ -91,12 +92,13 @@ export default class App extends Component {
                 >
                     {marker}
                 </MapView>
-            </View>
+    </View>
         );
     }
 }
 
 const styles = StyleSheet.create ({
+
     map:{
         width: "100%",
         height: "100%"
