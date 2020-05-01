@@ -46,8 +46,7 @@ export default class App extends Component {
                                     }}
                                 >
                                     <Callout>
-                                        <Text style={styles.textBold}>{json[last]["Country"]} Current
-                                            Data</Text>Live
+                                        <Text style={styles.textBold}>{json[last]["Country"]} Current Situation</Text>
                                         <Text style={styles.text}>Confirmed:<Text
                                             style={styles.number}> {json[last]["Confirmed"]}</Text></Text>
                                         <Text style={styles.text}>Deaths:<Text
@@ -83,7 +82,7 @@ export default class App extends Component {
                 <MapView
                     style={styles.map}
                     region={{
-                        zoom: 15,
+                        zoom: 2,
                         latitude: 33.86,
                         longitude: -80.95,
                         latitudeDelta: 0.0922,
