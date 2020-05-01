@@ -3,7 +3,7 @@
 1. download project
 2. cd project folder
 3. open android emulator
-4. yarn android
+4. type: yarn android in the termianl
 
 ## The Implementation
 1. Get conuntry list name from https://api.covid19api.com/countries by running countrylist.py file. And put country names into a list of our app.js manually. (These step could save lots of time by avoiding get all country name everytime we run the project.)
