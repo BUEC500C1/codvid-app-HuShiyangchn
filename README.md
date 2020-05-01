@@ -11,3 +11,4 @@
 3. Rendring all markers in the map.
 
 ## Test Snapshot
+![image](https://github.com/BUEC500C1/codvid-app-HuShiyangchn/blob/master/Image/snapshot.png)
